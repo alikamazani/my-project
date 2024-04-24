@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Get Informations Climatology
+{% endblock %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{{ 'static/css/getinfo.css' }}">
+    <section class="section-main-getinfo">
+        <div>
+            <h2 class="h2-getinfo"></h2>
+            <h4 class="h4-getinfo">گزارش سه ماه ایستگاه های اقلیم شناسی</h4>
+        </div>
+        <hr>
+        <section class="section-getinfo">
+            <form class="form-synop" action="#" method="post">
+                <label for="form-synop">نام استان<span class="required"></span></label>
+                <input class="first-name" type="text" name="name-state" list="selectState" required autofocus/>
+                <datalist id="selectState">
+
+                    <option value="enter value">
+
+                </datalist>
+                <label>نام ایستگاه<span class="required"></span></label>
+                <input type="text" name="name-station" placeholder="" required/>
+                <hr>
+                <h1>پیدا کردن موقعیت جغرافیای وارد شونده به سایت</h1>
+                <h4 class="h4-getinfo">انجام اقدامات دوره ای</h4>
+                <hr>
+                <div class="question-block">
+                    <p class="question">دیتالاگر : پاک کردن داخل جعبه دیتا لاگر با دستمال نسبتا نمناک هر 3
+                        ماه<span
+                                class="required"></span></p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="dOne" name="answer1"/>
+                            <label for="dOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="dTwo" name="answer1" required/>
+                            <label for="dTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">سنسور دما و رطوبت : پاک کردن فیلتر سنسور دما ورطوبت با پارچه نم دار هر 3
+                        ماه</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="rOne" name="answer2"/>
+                            <label for="rOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="rTwo" name="answer2"/>
+                            <label for="rTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">باطری وUPS : از مدار خارج کردن برق شهر و بررسی عملکرد باطری وUPS هر
+                        6ماه</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="bOne" name="answer3"/>
+                            <label for="bOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="bTwo" name="answer3"/>
+                            <label for="bTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="question-block">
+                    <p class="question">چاه ارت : اندازه گیری مقاومت چاه ارت هر 6ماه( مقدار مجاز حد اکثر 5
+                        اهم)</p>
+                    <div class="answer">
+                        <div>
+                            <input type="radio" value="none" id="chOne" name="answer4"/>
+                            <label for="chOne" class="radio">انجام شد</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="none" id="chTwo" name="answer4"/>
+                            <label for="chTwo" class="radio">انجام نشد</label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <input type="submit" value="ارسال گزارش">
+                <input type="reset" value="ریست کردن">
+            </form>
+        </section>
+    </section>
+
+{% endblock %}

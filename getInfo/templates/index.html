@@ -1,0 +1,17 @@
+{% if top_list %}
+    <ul>
+    <b><pre>Name    Total steps</pre></b>
+    {% for t in top_list %}
+        <pre>{{t.name}} {{t.total_steps}}</pre>
+    {% endfor %}
+    </ul>
+    {% else %}
+    <p>No data available.</p>
+{% endif %}
+<br>
+<form action="/steps_count/" method="post">
+    {% csrf_token %}
+    Name: <input type="text" name="Name" /><br />
+    Steps: <input type="text" name="Steps" /><br />
+   <input type="submit" value="Add" />
+ </form>
